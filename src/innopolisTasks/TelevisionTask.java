@@ -1,4 +1,4 @@
-package innopolisTask;
+package innopolisTasks;
 
 public class TelevisionTask {
     private String manufacturer;

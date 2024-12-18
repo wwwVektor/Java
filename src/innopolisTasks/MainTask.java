@@ -1,4 +1,4 @@
-package innopolisTask;
+package innopolisTasks;
 
 public class MainTask {
     public static void main(String[] args) {

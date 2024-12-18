@@ -1,4 +1,4 @@
-package innopolisTask;
+package innopolisTasks;
 
 import java.util.Scanner;
 

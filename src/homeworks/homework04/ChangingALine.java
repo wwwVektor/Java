@@ -1,20 +1,21 @@
 package homeworks.homework04;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import java.util.Arrays;
+
+/*
+Задана строка, состоящая из букв английского алфавита, разделенных одним пробелом. Необходимо каждую последовательность
+символов упорядочить по возрастанию и вывести слова в нижнем регистре.
+Входные данные: в единственной строке последовательность символов представляющее два слова.
+Выходные данные: упорядоченные по возрастанию буквы в нижнем регистре.
+ */
 
 public class ChangingALine {
     public static void main(String[] args) {
-        String arrows = ">>-->>>-->-->><<--<<--<<--<<-->>";
+        String inputString = "GfrdTvdGERbdhbdPtEaHTsd kiWpeOaNhvvDPJCCEeeddgvd";
 
-        Pattern pattern = Pattern.compile(">>-->|<--<<");
-        Matcher matcher = pattern.matcher(arrows);
+        char[] tempArray = inputString.toLowerCase().toCharArray();
+        Arrays.sort(tempArray);
 
-        int counter = 0;
-
-        while (matcher.find()) {
-            counter++;
-        }
-        System.out.println(counter);
+        System.out.println(tempArray);
     }
 }
